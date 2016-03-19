@@ -1,36 +1,18 @@
-//
-//  calcUlatrTests.swift
-//  calcUlatrTests
-//
-//  Created by Mike Gajda on 3/19/16.
-//  Copyright © 2016 Preference Digital. All rights reserved.
-//
-
+import UIKit
 import XCTest
-@testable import calcUlatr
 
 class calcUlatrTests: XCTestCase {
+    // MARK: Tests
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testCourseInit() {
+        let potentialCourse = Course(name: "CS111", categories: [Category(name: "tests", weight:10), Category(name: "quizzes", weight:90)])
+        XCTAssertNotNil(potentialCourse)
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testCourseInit3() {
+        let potentialCourse = Course(name: "CS111", categories: [Category(name: "tests", weight:10), Category(name: "tests", weight:10)])
+        XCTAssertNil(potentialCourse)
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
-    }
     
 }

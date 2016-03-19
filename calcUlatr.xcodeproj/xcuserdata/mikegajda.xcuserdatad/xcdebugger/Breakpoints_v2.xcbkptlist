@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "calcUlatr/Course.swift"
+            timestampString = "480112373.493755"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "Course"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "calcUlatr.Course.name.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "calcUlatr"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mikegajda/Documents/Projects/calcUlatr/calcUlatr/Course.swift"
+                  timestampString = "480119421.021732"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "calcUlatr.Course.name.setter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "calcUlatr"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mikegajda/Documents/Projects/calcUlatr/calcUlatr/Course.swift"
+                  timestampString = "480119421.022025"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "50">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "calcUlatr.Course.init (calcUlatr.Course.Type)(name1 : Swift.String, categories1 : Swift.Array&lt;calcUlatr.Category&gt;) -&gt; Swift.Optional&lt;calcUlatr.Course&gt;"
+                  moduleName = "calcUlatr"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mikegajda/Documents/Projects/calcUlatr/calcUlatr/Course.swift"
+                  timestampString = "480119421.022152"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "111">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "calcUlatr.Course.name.materializeForSet : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "calcUlatr"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mikegajda/Documents/Projects/calcUlatr/calcUlatr/Course.swift"
+                  timestampString = "480119421.022265"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "calcUlatr/Course.swift"
+            timestampString = "480115719.276005"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "init(name1:categories1:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
