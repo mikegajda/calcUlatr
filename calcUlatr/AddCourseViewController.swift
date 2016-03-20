@@ -14,6 +14,7 @@ class AddCourseViewController: UIViewController {
     
     @IBOutlet weak var courseNameField: UITextField!
     @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var cancelButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +37,6 @@ class AddCourseViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if saveButton === sender {
@@ -46,7 +46,6 @@ class AddCourseViewController: UIViewController {
             course = Course(name1: name, categories1: [category1])
             print(course!.name)
         }
-        
     }
 
 }

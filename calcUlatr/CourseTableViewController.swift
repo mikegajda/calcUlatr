@@ -115,7 +115,6 @@ class CourseTableViewController: UITableViewController {
         if let sourceViewController = sender.sourceViewController as?
             AddCourseViewController, course = sourceViewController.course {
                 let newIndexPath = NSIndexPath(forRow: myCourses.count, inSection: 0)
-                print(course)
                 myCourses.append(course)
                 tableView.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .Bottom)
         }

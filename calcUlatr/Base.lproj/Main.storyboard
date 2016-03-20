@@ -129,6 +129,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cN4-bf-Xjc">
                                 <rect key="frame" x="20" y="138" width="48" height="30"/>
                                 <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <segue destination="One-cZ-pz0" kind="unwind" unwindAction="unwindToCourse:" id="Cic-Lo-DyI"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIB-PR-Tfy">
                                 <rect key="frame" x="20" y="91" width="109" height="30"/>
@@ -158,6 +161,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cancelButton" destination="cN4-bf-Xjc" id="Lwm-qS-cOA"/>
                         <outlet property="courseNameField" destination="FnC-eM-btw" id="ssu-vQ-KLQ"/>
                         <outlet property="saveButton" destination="OkA-Ks-XEu" id="3km-Ms-8ST"/>
                     </connections>
