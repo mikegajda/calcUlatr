@@ -37,9 +37,12 @@ class CourseTableViewController: UITableViewController {
         
         
         let assign2 = Assignment(name: "final", possiblePts: 100.0, recvdPts: 100.0)
-        let category2 = Category(name: "tests", weight: 100.0, assignments: [assign2!])!
+        let category2 = Category(name: "homework", weight: 100.0, assignments: [assign2!])!
         
-        let course2 = Course(name1: "CS112", categories1: [category2])!
+        let assign3 = Assignment(name: "day 1", possiblePts: 100.0, recvdPts: 100.0)
+        let category3 = Category(name: "attendance", weight: 100.0, assignments: [assign3!])!
+
+        let course2 = Course(name1: "CS112", categories1: [category3])!
         print(course1.name)
         myCourses += [course1, course2]
     }
@@ -119,6 +122,7 @@ class CourseTableViewController: UITableViewController {
                 myCourses.append(course)
                 tableView.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .Bottom)
         }
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
