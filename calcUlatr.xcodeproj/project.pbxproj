@@ -19,6 +19,8 @@
 		1D87C3991C9E0DE200D3A961 /* AddCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D87C3981C9E0DE200D3A961 /* AddCourseViewController.swift */; };
 		2EC972DF1C9E8710008BF4EE /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC972DE1C9E8710008BF4EE /* CategoryTableViewCell.swift */; };
 		2EC972E11C9E8D56008BF4EE /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC972E01C9E8D56008BF4EE /* CategoriesTableViewController.swift */; };
+		2EC972E31C9F4B6C008BF4EE /* AssignmentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC972E21C9F4B6C008BF4EE /* AssignmentsTableViewController.swift */; };
+		2EC972E51C9F4C84008BF4EE /* AssignmentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC972E41C9F4C84008BF4EE /* AssignmentsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		1D87C3981C9E0DE200D3A961 /* AddCourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCourseViewController.swift; sourceTree = "<group>"; };
 		2EC972DE1C9E8710008BF4EE /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		2EC972E01C9E8D56008BF4EE /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
+		2EC972E21C9F4B6C008BF4EE /* AssignmentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentsTableViewController.swift; sourceTree = "<group>"; };
+		2EC972E41C9F4C84008BF4EE /* AssignmentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 				1D87C3711C9DADA400D3A961 /* AppDelegate.swift */,
 				1D87C3981C9E0DE200D3A961 /* AddCourseViewController.swift */,
 				1D87C3751C9DADA400D3A961 /* Main.storyboard */,
+				2EC972E41C9F4C84008BF4EE /* AssignmentsTableViewCell.swift */,
+				2EC972E21C9F4B6C008BF4EE /* AssignmentsTableViewController.swift */,
 				2EC972E01C9E8D56008BF4EE /* CategoriesTableViewController.swift */,
 				1D87C3961C9DF4E100D3A961 /* CourseTableViewController.swift */,
 				1D87C3911C9DD2CB00D3A961 /* Course.swift */,
@@ -215,10 +221,12 @@
 			files = (
 				1D87C3971C9DF4E100D3A961 /* CourseTableViewController.swift in Sources */,
 				1D87C3991C9E0DE200D3A961 /* AddCourseViewController.swift in Sources */,
+				2EC972E31C9F4B6C008BF4EE /* AssignmentsTableViewController.swift in Sources */,
 				2EC972E11C9E8D56008BF4EE /* CategoriesTableViewController.swift in Sources */,
 				1D87C3951C9DF22A00D3A961 /* CourseTableViewCell.swift in Sources */,
 				2EC972DF1C9E8710008BF4EE /* CategoryTableViewCell.swift in Sources */,
 				1D87C3921C9DD2CB00D3A961 /* Course.swift in Sources */,
+				2EC972E51C9F4C84008BF4EE /* AssignmentsTableViewCell.swift in Sources */,
 				1D87C3721C9DADA400D3A961 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

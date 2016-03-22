@@ -1,5 +1,5 @@
 //
-//  CategoriesTableViewController.swift
+//  AssignmentsTableViewController.swift
 //  calcUlatr
 //
 //  Created by Tyrone Hou on 3/20/16.
@@ -8,15 +8,13 @@
 
 import UIKit
 
-class CategoriesTableViewController: UITableViewController {
-    
-    var course = Course()
-    var myCategories = [Category]()
-    let assignmentsSegueIdentifier = "AssignmentsTableViewSegue"
+class AssignmentsTableViewController: UITableViewController {
+
+    var assignment = Assignment()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        myCategories = (course?.categories)!
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -30,26 +28,26 @@ class CategoriesTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-    
+
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        
-        return 1
+        // #warning Incomplete implementation, return the number of sections
+        return 0
     }
-    
+
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (course?.categories.count)!
+        // #warning Incomplete implementation, return the number of rows
+        return 0
     }
-    
+
+    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        // Table view cells are reused and should be dequeued using a cell identifier.
-        let cellIdentifier = "CategoryTableViewCell"
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! CategoryTableViewCell
-        
-        let myCategory = myCategories[indexPath.row]
-        cell.CategoryNameLabel.text = myCategory.name
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+
+        // Configure the cell...
+
         return cell
     }
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -95,16 +93,5 @@ class CategoriesTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-/*
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == assignmentsSegueIdentifier {
-            print(segue.destinationViewController)
-            if let destination = segue.destinationViewController as? AssignmentsTableViewController {
-                if let categoryIndex = tableView.indexPathForSelectedRow?.row {
-                    destination.assignment = Assignment()
-                }
-            }
-        }
-    }
-*/
+
 }

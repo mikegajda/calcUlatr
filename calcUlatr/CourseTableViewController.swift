@@ -33,17 +33,18 @@ class CourseTableViewController: UITableViewController {
         let assign1 = Assignment(name: "final", possiblePts: 100.0, recvdPts: 100.0)
         let category1 = Category(name: "tests", weight: 100.0, assignments: [assign1!])!
         
+        
         let course1 = Course(name1: "CS411", categories1: [category1])!
         
-        
-        let assign2 = Assignment(name: "final", possiblePts: 100.0, recvdPts: 100.0)
-        let category2 = Category(name: "homework", weight: 100.0, assignments: [assign2!])!
+        //let assign2 = Assignment(name: "final", possiblePts: 100.0, recvdPts: 100.0)
+        //let category2 = Category(name: "homework", weight: 100.0, assignments: [assign2!])!
         
         let assign3 = Assignment(name: "day 1", possiblePts: 100.0, recvdPts: 100.0)
-        let category3 = Category(name: "attendance", weight: 100.0, assignments: [assign3!])!
+        let category3 = Category(name: "attendance", weight: 50.0, assignments: [assign3!])!
+        let category4 = Category(name: "homework", weight: 50.0, assignments: [assign3!])!
+        
+        let course2 = Course(name1: "CS111", categories1: [category3, category4])!
 
-        let course2 = Course(name1: "CS112", categories1: [category3])!
-        print(course1.name)
         myCourses += [course1, course2]
     }
 
