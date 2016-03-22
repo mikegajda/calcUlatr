@@ -10,11 +10,12 @@ import UIKit
 
 class AssignmentsTableViewController: UITableViewController {
     
-    var assignments = [Assignment]()
+    var categoryName = ""
+    var assignments = [Assignment]?()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        assignments.append(Assignment()!)
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -34,18 +35,20 @@ class AssignmentsTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return assignments.count
+        return assignments!.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
+        let cellIdentifier = "AssignmentTableViewCell"
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! AssignmentsTableViewCell
+        
+        let myAssignment = assignments![indexPath.row]
+        cell.AssignmentNameLabel.text = myAssignment.name
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

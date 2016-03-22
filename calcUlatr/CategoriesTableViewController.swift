@@ -99,16 +99,18 @@ class CategoriesTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-/*
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == assignmentsSegueIdentifier {
             print(segue.destinationViewController)
             if let destination = segue.destinationViewController as? AssignmentsTableViewController {
                 if let categoryIndex = tableView.indexPathForSelectedRow?.row {
-                    destination.assignment = Assignment()
+                    let selectedCategory = myCategories![categoryIndex]
+                    destination.categoryName = selectedCategory.name
+                    destination.assignments = selectedCategory.assignments
                 }
             }
         }
     }
-*/
+
 }
