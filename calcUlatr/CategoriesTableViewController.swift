@@ -10,12 +10,18 @@ import UIKit
 
 class CategoriesTableViewController: UITableViewController {
     
+    // MARK: Properties
+    
     var courseName = ""
     var myCategories = [Category]?()
     let assignmentsSegueIdentifier = "AssignmentsTableViewSegue"
     
+    
+    @IBOutlet weak var CategoriesNavigationBar: UINavigationItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        CategoriesNavigationBar.title = courseName
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
