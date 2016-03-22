@@ -56,12 +56,10 @@ class CourseTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        
         return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
         return myCourses.count
     }
 
@@ -131,7 +129,9 @@ class CourseTableViewController: UITableViewController {
             print(segue.destinationViewController)
             if let destination = segue.destinationViewController as? CategoriesTableViewController {
                 if let courseIndex = tableView.indexPathForSelectedRow?.row {
-                    destination.course = myCourses[courseIndex]
+                    let selectedCourse = myCourses[courseIndex]
+                    destination.courseName = selectedCourse.name!
+                    destination.myCategories = selectedCourse.categories
                 }
             }
         }

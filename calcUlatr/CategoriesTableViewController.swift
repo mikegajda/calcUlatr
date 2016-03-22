@@ -10,13 +10,12 @@ import UIKit
 
 class CategoriesTableViewController: UITableViewController {
     
-    var course = Course()
-    var myCategories = [Category]()
+    var courseName = ""
+    var myCategories = [Category]?()
     let assignmentsSegueIdentifier = "AssignmentsTableViewSegue"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        myCategories = (course?.categories)!
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -32,12 +31,11 @@ class CategoriesTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        
         return 1
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (course?.categories.count)!
+        return myCategories!.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -46,7 +44,7 @@ class CategoriesTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! CategoryTableViewCell
         
-        let myCategory = myCategories[indexPath.row]
+        let myCategory = myCategories![indexPath.row]
         cell.CategoryNameLabel.text = myCategory.name
         return cell
     }
