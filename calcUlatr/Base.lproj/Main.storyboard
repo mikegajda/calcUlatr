@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kTT-Hm-tdy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kTT-Hm-tdy">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -88,7 +88,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abb-WK-BVh">
                                             <rect key="frame" x="21" y="11" width="86" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -140,7 +140,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NId-Yf-dQo">
                                             <rect key="frame" x="30" y="2" width="86" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -174,25 +174,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex: CS 411" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FnC-eM-btw">
-                                <rect key="frame" x="491" y="91" width="89" height="30"/>
+                                <rect key="frame" x="491" y="70" width="89" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cN4-bf-Xjc">
-                                <rect key="frame" x="20" y="138" width="48" height="30"/>
+                                <rect key="frame" x="20" y="111" width="48" height="30"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
                                     <segue destination="One-cZ-pz0" kind="unwind" unwindAction="unwindToCourse:" id="Cic-Lo-DyI"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIB-PR-Tfy">
-                                <rect key="frame" x="20" y="91" width="109" height="30"/>
+                                <rect key="frame" x="20" y="70" width="109" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkA-Ks-XEu">
-                                <rect key="frame" x="546" y="138" width="34" height="30"/>
+                                <rect key="frame" x="546" y="120" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <segue destination="One-cZ-pz0" kind="unwind" unwindAction="unwindToCourse:" id="YC6-Zn-EEz"/>
@@ -201,15 +201,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="OkA-Ks-XEu" firstAttribute="trailing" secondItem="7Qv-xJ-GQk" secondAttribute="trailingMargin" id="1SX-pH-5Ew"/>
-                            <constraint firstItem="cN4-bf-Xjc" firstAttribute="top" secondItem="aIB-PR-Tfy" secondAttribute="bottom" constant="17" id="4Yb-cs-ytM"/>
-                            <constraint firstItem="FnC-eM-btw" firstAttribute="bottom" secondItem="aIB-PR-Tfy" secondAttribute="bottom" id="7vV-yf-lmb"/>
                             <constraint firstItem="aIB-PR-Tfy" firstAttribute="leading" secondItem="cN4-bf-Xjc" secondAttribute="leading" id="ARm-Gl-tiO"/>
-                            <constraint firstItem="FnC-eM-btw" firstAttribute="top" secondItem="U3I-Ez-Yxi" secondAttribute="bottom" constant="71" id="J9r-Ek-2fd"/>
-                            <constraint firstItem="FnC-eM-btw" firstAttribute="trailing" secondItem="7Qv-xJ-GQk" secondAttribute="trailingMargin" id="PXT-ES-P61"/>
-                            <constraint firstItem="OkA-Ks-XEu" firstAttribute="top" secondItem="FnC-eM-btw" secondAttribute="bottom" constant="17" id="dDh-iT-xG4"/>
+                            <constraint firstItem="OkA-Ks-XEu" firstAttribute="trailing" secondItem="FnC-eM-btw" secondAttribute="trailing" id="CnH-f8-u8J"/>
+                            <constraint firstItem="cN4-bf-Xjc" firstAttribute="top" secondItem="aIB-PR-Tfy" secondAttribute="bottom" constant="20" id="EPA-Z1-WcO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FnC-eM-btw" secondAttribute="trailing" id="TLu-cr-5Wu"/>
+                            <constraint firstItem="aIB-PR-Tfy" firstAttribute="top" secondItem="U3I-Ez-Yxi" secondAttribute="bottom" constant="50" id="fzs-Ac-d3x"/>
                             <constraint firstItem="aIB-PR-Tfy" firstAttribute="leading" secondItem="7Qv-xJ-GQk" secondAttribute="leadingMargin" id="kLS-Bc-taN"/>
                             <constraint firstItem="FnC-eM-btw" firstAttribute="top" secondItem="aIB-PR-Tfy" secondAttribute="top" id="lM4-0v-IOi"/>
+                            <constraint firstItem="FnC-eM-btw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aIB-PR-Tfy" secondAttribute="trailing" constant="20" id="nOw-bZ-K7J"/>
+                            <constraint firstItem="OkA-Ks-XEu" firstAttribute="top" secondItem="FnC-eM-btw" secondAttribute="bottom" constant="20" id="pYO-bW-K1s"/>
                         </constraints>
                     </view>
                     <connections>
@@ -222,6 +222,24 @@
                 <exit id="One-cZ-pz0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="593" y="625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3R7-LF-NSq">
+            <objects>
+                <viewController id="CCr-b5-sdx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gab-1a-BhY"/>
+                        <viewControllerLayoutGuide type="bottom" id="4wN-XB-Y18"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7b4-2e-7ax">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dis-KH-NmQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="593" y="1397"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lfi-cJ-igh">
@@ -261,7 +279,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PtE-61-uhV"/>
         <segue reference="gQY-KM-pR2"/>
+        <segue reference="PtE-61-uhV"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -16,7 +16,6 @@ class CategoriesTableViewController: UITableViewController {
     var myCategories = [Category]?()
     let assignmentsSegueIdentifier = "AssignmentsTableViewSegue"
     
-    
     @IBOutlet weak var CategoriesNavigationBar: UINavigationItem!
     
     override func viewDidLoad() {
